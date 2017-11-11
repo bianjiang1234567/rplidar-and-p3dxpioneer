@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "iai_kinect2")
+set(iai_kinect2_MAINTAINER "Thiemo Wiedemeyer <wiedemeyer@informatik.uni-bremen.de>")
+set(iai_kinect2_DEPRECATED "")
+set(iai_kinect2_VERSION "0.0.1")
+set(iai_kinect2_BUILD_DEPENDS )
+set(iai_kinect2_RUN_DEPENDS "kinect2_calibration" "kinect2_viewer" "kinect2_bridge" "kinect2_registration")
+set(iai_kinect2_BUILDTOOL_DEPENDS "catkin")

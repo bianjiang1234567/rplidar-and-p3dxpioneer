@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "record_skeleton")
+set(record_skeleton_MAINTAINER "bianjiang <bianjiang@todo.todo>")
+set(record_skeleton_DEPRECATED "")
+set(record_skeleton_VERSION "0.0.0")
+set(record_skeleton_BUILD_DEPENDS "rospy" "tf")
+set(record_skeleton_RUN_DEPENDS "rospy" "tf")
+set(record_skeleton_BUILDTOOL_DEPENDS "catkin")

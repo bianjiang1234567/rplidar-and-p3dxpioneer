@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "openni_tracker")
+set(openni_tracker_MAINTAINER "Marcus Liebhardt <marcus.liebhardt@yujinrobot.com>")
+set(openni_tracker_DEPRECATED "")
+set(openni_tracker_VERSION "0.2.0")
+set(openni_tracker_BUILD_DEPENDS "libopenni-dev" "libusb-1.0-dev" "libopenni-sensor-primesense-dev" "geometry_msgs" "orocos_kdl" "roscpp" "roslib" "tf")
+set(openni_tracker_RUN_DEPENDS "libopenni-dev" "libusb-1.0-dev" "libopenni-sensor-primesense-dev" "geometry_msgs" "orocos_kdl" "roscpp" "roslib" "tf")
+set(openni_tracker_BUILDTOOL_DEPENDS "catkin")

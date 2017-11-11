@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "serial")
+set(serial_MAINTAINER "suijingfeng <suijingfeng@todo.todo>")
+set(serial_DEPRECATED "")
+set(serial_VERSION "0.0.0")
+set(serial_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(serial_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(serial_BUILDTOOL_DEPENDS "catkin")

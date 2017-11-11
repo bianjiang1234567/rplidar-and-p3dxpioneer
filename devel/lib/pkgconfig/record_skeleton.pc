@@ -1,0 +1,8 @@
+prefix=/home/bianjiang/catkin_ws/devel
+
+Name: record_skeleton
+Description: Description of record_skeleton
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/bianjiang/catkin_ws/devel/lib 
+Requires: 

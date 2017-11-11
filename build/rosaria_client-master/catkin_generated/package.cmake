@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "rosaria_client")
+set(rosaria_client_MAINTAINER "pengtang <ptang@fordham.edu>")
+set(rosaria_client_DEPRECATED "")
+set(rosaria_client_VERSION "0.0.0")
+set(rosaria_client_BUILD_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs" "rosaria")
+set(rosaria_client_RUN_DEPENDS "roscpp" "rospy" "std_msgs" "geometry_msgs")
+set(rosaria_client_BUILDTOOL_DEPENDS "catkin")

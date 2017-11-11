@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "kinect2_registration")
+set(kinect2_registration_MAINTAINER "Thiemo Wiedemeyer <wiedemeyer@informatik.uni-bremen.de>")
+set(kinect2_registration_DEPRECATED "")
+set(kinect2_registration_VERSION "0.0.1")
+set(kinect2_registration_BUILD_DEPENDS "roscpp" "cv_bridge")
+set(kinect2_registration_RUN_DEPENDS "roscpp" "cv_bridge")
+set(kinect2_registration_BUILDTOOL_DEPENDS "catkin")

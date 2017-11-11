@@ -1,0 +1,8 @@
+prefix=/home/bianjiang/catkin_ws/devel
+
+Name: kinect2_registration
+Description: Description of kinect2_registration
+Version: 0.0.1
+Cflags: -I/home/bianjiang/catkin_ws/src/iai_kinect2-devel/kinect2_registration/include
+Libs: -L/home/bianjiang/catkin_ws/devel/lib -lkinect2_registration -l:/usr/lib/x86_64-linux-gnu/libOpenCL.so
+Requires: 
