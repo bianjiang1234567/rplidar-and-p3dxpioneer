@@ -1,0 +1,60 @@
+source ~/catkin_ws/devel/setup.bash
+
+ll /dev |grep ttyUSB
+sudo chmod 666 /dev/ttyUSB0 
+sudo chmod a+rw /dev/ttyUSB1
+
+roscore
+
+ rosrun rplidar_ros rplidarNode
+rosrun rosaria RosAria _port:=/dev/ttyUSB1
+
+rosrun rosaria_client spin_clockwise
+
+rostopic pub -1 /RosAria/cmd_vel geometry_msgs/Twist '[0.0,0.0,0.0]' '[0.0, 0.0, 0.5]'
+
+rostopic pub -r 2 /RosAria/cmd_vel geometry_gs/Twist '[-2,-2,-2]' '[-2, -2, -2]' 
+循环执行2hz
+
+sudo apt-get install ros-kinetic-openslam-gmapping 
+sudo apt-get install ros-kinetic-gmapping 
+
+catkin_create_pkg robot_setup_tf roscpp tf geometry_msgs
+创建了tf包 添加了依赖
+
+rosrun robot_setup_tf tf_broadcaster
+
+rosrun gmapping slam_gmapping scan:=/scan
+
+rosnode info /scan
+rostopic echo /map
+rosbag play mingzi
+rosservice call buquanfuwu
+rosrun map_server map_saver -f <map_name>  一般是map.pgm 存在了Home下
+书名号中的内容需要自己补全，去掉书名号
+
+rosrun tf view_frames
+evince frames.pdf
+
+先启动 rosrun rosaria RosAria _port:=/dev/ttyUSB1
+rosrun rosaria_client interface 
+
+rosrun rviz rviz -d 'rospack find p3dx_rosaria'/navigation.rviz
+rosrun map_server map_server /home/maysam/fuerte_workspace/sandbox/mit/map.yaml
+
+sudo apt-get install --reinstall ros-electric-navigation
+
+rosrun rviz rviz -d 'rospack find p3dx_rosaria'/navigation.rviz
+
+sudo cp -a /opt/ros/kinetic/lib/map_server/map_server  /opt/ros/kinetic/share/map_server/
+
+rospack profile
+
+$ sudo chmod 777 /dev/ttyUSB*
+ $ roslaunch p3dx_navigation pioneer.launch
+ $ roslaunch p3dx_navigation rviz_p3dx.launch
+ $ roslaunch p3dx_navigation move_base_rosaria.launch
+
+sudo cp -a /opt/ros/kinetic/lib/map_server/map_saver /opt/ros/kinetic/share/map_server/
+
+
