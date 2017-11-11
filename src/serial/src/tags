@@ -1,0 +1,101 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BAUDRATE	SerialPort.h	4;"	d
+CDrive	Drive.h	/^class CDrive  $/;"	c
+CDrive	Drive_node.cpp	/^CDrive::CDrive(): $/;"	f	class:CDrive
+CMD_DISTANCE_QUERY	Drive_node.cpp	/^const char CMD_DISTANCE_QUERY = 0x0D;   \/\/??ѯ???����???ǰʱ???˶?????$/;"	v
+CMD_FLAG_QUERY	Drive_node.cpp	/^const char CMD_FLAG_QUERY   = 0x0A;  \/\/??λ???????˶?ָ???Ƿ????ɱ?־$/;"	v
+CMD_LED_DISP	Drive_node.cpp	/^const char CMD_LED_DISP = 0x10;$/;"	v
+CMD_LOCAL_DISTANCE_QUERY	Drive_node.cpp	/^const char CMD_LOCAL_DISTANCE_QUERY = 0x14; \/\/??ѯλ????ʼ?㵽??ǰʱ???˶?????$/;"	v
+CMD_POS_LINE	Drive_node.cpp	/^const char CMD_POS_LINE	=	0x03;$/;"	v
+CMD_POS_RESET	Drive_node.cpp	/^const char CMD_POS_RESET = 0x0E;           \/\/????ȫ?????̼???$/;"	v
+CMD_POS_SELFCURVE	Drive_node.cpp	/^const char CMD_POS_SELFCURVE	= 0x04;$/;"	v
+CMD_SET_ACCELERATION	Drive_node.cpp	/^const char CMD_SET_ACCELERATION = 0x15;    \/\/???ü??ٵ?ָ??$/;"	v
+CMD_SET_MOTION_MODE	Drive_node.cpp	/^const char CMD_SET_MOTION_MODE  = 0x06;$/;"	v
+CMD_SET_STARTPOINT	Drive_node.cpp	/^const char CMD_SET_STARTPOINT = 0x13;      \/\/????λ????ʼ??$/;"	v
+CMD_STATUS_QUERY	Drive_node.cpp	/^const char CMD_STATUS_QUERY = 0x07;     \/\/״̬??ѯָ??$/;"	v
+CMD_VELOCITY_DISTANCE	Drive_node.cpp	/^const char CMD_VELOCITY_DISTANCE = 0x05; $/;"	v
+CMD_VEL_CURVE	Drive_node.cpp	/^const char CMD_VEL_CURVE	=	0x02;$/;"	v
+CMD_VEL_LINE	Drive_node.cpp	/^const char CMD_VEL_LINE   =	0x01;$/;"	v
+CMPS_RPM_CONVERTER	Drive_node.cpp	36;"	d	file:
+CSerialPort	SerialPort.cpp	/^CSerialPort::CSerialPort()$/;"	f	class:CSerialPort
+CSerialPort	SerialPort.h	/^class CSerialPort  $/;"	c
+ClearInputBuffer	SerialPort.cpp	/^bool CSerialPort::ClearInputBuffer()$/;"	f	class:CSerialPort
+ClosePort	SerialPort.cpp	/^void CSerialPort::ClosePort()$/;"	f	class:CSerialPort
+CmpsToRpm	Drive_node.cpp	37;"	d	file:
+DATABITS	SerialPort.h	5;"	d
+DEBUG_DRIVE	Drive.h	23;"	d
+DRIVE_H_	Drive.h	8;"	d
+DriveHaveCommand	Drive.h	/^	inline bool DriveHaveCommand()$/;"	f	class:CDrive
+IsPortOpened	SerialPort.cpp	/^bool CSerialPort::IsPortOpened()$/;"	f	class:CSerialPort
+LONG_TIME_NO_COMMAND_CHECKER	Drive.h	25;"	d
+MAX_OMEGA	Drive_node.cpp	33;"	d	file:
+MAX_VELOCITY	Drive_node.cpp	32;"	d	file:
+MIN_OMEGA	Drive_node.cpp	23;"	d	file:
+OpenPort	SerialPort.cpp	/^int CSerialPort::OpenPort(const char * dev)$/;"	f	class:CSerialPort
+PARITY	SerialPort.h	6;"	d
+PI	Drive_node.cpp	28;"	d	file:
+PORT	Drive_node.cpp	/^const char PORT[] = "\/dev\/ttyUSB0";$/;"	v
+ReadData	SerialPort.cpp	/^int CSerialPort::ReadData(char *pData, int len)$/;"	f	class:CSerialPort
+ReadData	SerialPort.cpp	/^int CSerialPort::ReadData(unsigned char *pData, int len)$/;"	f	class:CSerialPort
+RpmToCmps	Drive_node.cpp	38;"	d	file:
+SERIALPORT_H_	SerialPort.h	2;"	d
+STOPBITS	SerialPort.h	7;"	d
+SendData	SerialPort.cpp	/^int CSerialPort::SendData(char *szBuffer, int len)$/;"	f	class:CSerialPort
+SendData	SerialPort.cpp	/^int CSerialPort::SendData(const char *szBuffer, int len)$/;"	f	class:CSerialPort
+SendData	SerialPort.cpp	/^int CSerialPort::SendData(unsigned char *szBuffer, int len)$/;"	f	class:CSerialPort
+SetPortPars	SerialPort.cpp	/^bool CSerialPort::SetPortPars(int baud, unsigned char databits, unsigned char stopbits, char parity)$/;"	f	class:CSerialPort
+SetPose	Drive.h	/^	inline void SetPose(double x, double y, double heading)$/;"	f	class:CDrive
+TICKS_PER_DEGREE_GUIDE	Drive_node.cpp	34;"	d	file:
+TICKS_PER_REVOLUTION	Drive_node.cpp	29;"	d	file:
+USING_ODOM_COMBINED	Drive.h	24;"	d
+UcFloConv	Drive.h	/^union UcFloConv$/;"	u
+WHEEL_DIAMETER	Drive_node.cpp	26;"	d	file:
+WHEEL_WIDTH	Drive_node.cpp	27;"	d	file:
+ang_vel_	Drive.h	/^	double ang_vel_;$/;"	m	class:CDrive
+clearCommand	Drive.h	/^	inline void clearCommand()$/;"	f	class:CDrive
+cmdCheckTimer_	Drive.h	/^	ros::Timer cmdCheckTimer_;$/;"	m	class:CDrive
+cmd_timeout_	Drive.h	/^	bool   cmd_timeout_;$/;"	m	class:CDrive
+cmd_vel_timeout	Drive.h	/^	ros::Time cmd_vel_timeout;$/;"	m	class:CDrive
+dat	Drive.h	/^	unsigned char dat[4];$/;"	m	union:UcFloConv
+delta_s	Drive.h	/^	double delta_s; \/\/ [m]$/;"	m	class:CDrive
+delta_th	Drive.h	/^	double delta_th; \/\/ [rad]$/;"	m	class:CDrive
+dt	Drive.h	/^	double dt; \/\/ [s]$/;"	m	class:CDrive
+f	Drive.h	/^	float f;$/;"	m	union:UcFloConv
+fd	SerialPort.cpp	/^int CSerialPort::fd()$/;"	f	class:CSerialPort
+getPose	Drive.h	/^	void getPose(double& x, double& y, double& heading)$/;"	f	class:CDrive
+hCom	SerialPort.h	/^	int	hCom;$/;"	m	class:CSerialPort
+have_cmd_	Drive.h	/^	bool   have_cmd_;$/;"	m	class:CDrive
+heading_cur	Drive.h	/^	double heading_cur; \/\/[rad]$/;"	m	class:CDrive
+joint_state_publisher	Drive.h	/^	ros::Publisher joint_state_publisher;$/;"	m	class:CDrive
+joint_states	Drive.h	/^	sensor_msgs::JointState joint_states;$/;"	m	class:CDrive
+lastUpdateEncodersTime	Drive.h	/^	ros::Time lastUpdateEncodersTime;$/;"	m	class:CDrive
+last_cmd_time	Drive.h	/^	ros::Time last_cmd_time;$/;"	m	class:CDrive
+left_wheel_old_pos	Drive.h	/^	float left_wheel_old_pos  ;$/;"	m	class:CDrive
+left_wheel_pos	Drive.h	/^	float left_wheel_pos  ;$/;"	m	class:CDrive
+lin_vel_	Drive.h	/^ 	double lin_vel_;$/;"	m	class:CDrive
+m_bOpened	SerialPort.h	/^	bool m_bOpened;$/;"	m	class:CSerialPort
+m_spPort	Drive.h	/^	CSerialPort m_spPort;$/;"	m	class:CDrive
+main	Drive_node.cpp	/^int main(int argc, char **argv)$/;"	f
+nh_	Drive.h	/^	ros::NodeHandle nh_;$/;"	m	class:CDrive
+odom	Drive.h	/^	nav_msgs::Odometry odom;$/;"	m	class:CDrive
+odom_broadcaster	Drive.h	/^	tf::TransformBroadcaster odom_broadcaster;$/;"	m	class:CDrive
+odom_pub	Drive.h	/^	ros::Publisher odom_pub;$/;"	m	class:CDrive
+odom_trans	Drive.h	/^	geometry_msgs::TransformStamped odom_trans;$/;"	m	class:CDrive
+recBuf	Drive.h	/^	unsigned char recBuf[9]; \/\/ mainly for odometry data$/;"	m	class:CDrive
+right_wheel_old_pos	Drive.h	/^	float right_wheel_old_pos ;$/;"	m	class:CDrive
+right_wheel_pos	Drive.h	/^	float right_wheel_pos ;$/;"	m	class:CDrive
+sendBuf	Drive.h	/^	unsigned char sendBuf[32];$/;"	m	class:CDrive
+timer_	Drive.h	/^	ros::Timer timer_;$/;"	m	class:CDrive
+u2f	Drive.h	/^	UcFloConv u2f;  \/\/ unsigned char ch[4] -> float $/;"	m	class:CDrive
+vel_l_acc	Drive.h	/^	boost::accumulators::accumulator_set<double, boost::accumulators::stats<boost::accumulators::tag::rolling_mean> > vel_l_acc;$/;"	m	class:CDrive
+vel_r_acc	Drive.h	/^	boost::accumulators::accumulator_set<double, boost::accumulators::stats<boost::accumulators::tag::rolling_mean> > vel_r_acc;$/;"	m	class:CDrive
+velocity_sub_	Drive.h	/^	ros::Subscriber velocity_sub_;$/;"	m	class:CDrive
+x_cur	Drive.h	/^	double x_cur; \/\/ [m]$/;"	m	class:CDrive
+y_cur	Drive.h	/^	double y_cur; \/\/ [m]$/;"	m	class:CDrive
+~CDrive	Drive_node.cpp	/^CDrive::~CDrive()$/;"	f	class:CDrive
+~CSerialPort	SerialPort.cpp	/^CSerialPort::~CSerialPort()$/;"	f	class:CSerialPort
