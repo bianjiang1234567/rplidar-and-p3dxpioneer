@@ -1,0 +1,50 @@
+<launch>
+
+  <node name="RosAria" pkg="rosaria" type="RosAria" args="_port:=/dev/ttyUSB1">
+  <remap from="/RosAria/cmd_vel" to="/cmd_vel"/>
+  <remap from="/RosAria/pose" to="odom"/>
+  </node>
+
+
+  <node name="rplidarNode"          pkg="rplidar_ros"  type="rplidarNode" output="screen">
+  <param name="serial_port"         type="string" value="/dev/ttyUSB0"/>  
+  <param name="serial_baudrate"     type="int"    value="115200"/>
+  <param name="frame_id"            type="string" value="laser"/>
+  <param name="inverted"            type="bool"   value="false"/>
+  <param name="angle_compensate"    type="bool"   value="true"/>
+  </node>
+
+  
+ <node name="tf_broadcaster" pkg="robot_setup_tf" type="tf_broadcaster" /> 
+
+ <node name="slam_gmapping" pkg="gmapping" type="slam_gmapping" >
+	<remap from="scan" to="/scan"/>
+ </node> 
+
+
+
+  <node pkg="tf" type="static_transform_publisher" name="odom_map_broadcaster" args="0 0 0 0 0 0 /map /odom 100" />
+
+  <arg name="model" default="$(find p3dx_navigation)/urdf/pioneer3dx.xml"/>
+  <arg name="gui" default="False" />
+  <param name="robot_description" textfile="$(arg model)" />
+  <param name="use_gui" value="$(arg gui)"/>
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find p3dx_navigation)/config/p3dx_rosaria/navigation.rviz" />
+
+
+<include file="$(find p3dx_navigation)/launch/amcl.launch"/>
+
+
+  <!--- Run move_base with parameters -->
+  <node pkg="move_base" type="move_base" respawn="false" name="move_base" output="screen">
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/costmap_common_params.yaml" command="load" ns="global_costmap" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/costmap_common_params.yaml" command="load" ns="local_costmap" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/local_costmap_params.yaml" command="load" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/global_costmap_params.yaml" command="load" />
+    <rosparam file="$(find p3dx_navigation)/config/p3dx_rosaria/move_base_params.yaml" command="load" />
+  </node>
+
+
+</launch>
+
+
